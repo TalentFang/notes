@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "d2cfbb5b6533e1e6",
+    "id": "d9ef912892a191f6",
     "type": "split",
     "children": [
       {
-        "id": "b74d4133895d9b07",
+        "id": "8a7d8b48fe678e4f",
         "type": "tabs",
         "children": [
           {
-            "id": "863aed325e77a92b",
+            "id": "3f06d4050aa98c4f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "channel.md",
+                "file": "学习计划.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "channel"
+              "title": "学习计划"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "d2ed629d2f727bd5",
+    "id": "c3ec4937c846d9d5",
     "type": "split",
     "children": [
       {
-        "id": "0fa358f62db88895",
+        "id": "2eadb41729c13154",
         "type": "tabs",
         "children": [
           {
-            "id": "7af1adda50d8f3bc",
+            "id": "513c0dd44a4c9b5e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "0737a5495c912d25",
+            "id": "768107b0c1cd872a",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "4b20d3b6ff2ba724",
+            "id": "799713973d2f7de5",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -81,21 +81,21 @@
     "width": 300
   },
   "right": {
-    "id": "b318ff6e44fd7d7d",
+    "id": "5997c2fbab024602",
     "type": "split",
     "children": [
       {
-        "id": "aa454fd3f9fe9ae1",
+        "id": "4a98e1117e8aefd2",
         "type": "tabs",
         "children": [
           {
-            "id": "f3738c36e1dcc024",
+            "id": "661a4e8b411b45f5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "channel.md",
-                "collapseAll": false,
+                "file": "学习计划.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -104,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "channel 的反向链接列表"
+              "title": "学习计划 的反向链接列表"
             }
           },
           {
-            "id": "7038b9c0d30e7427",
+            "id": "48384cb05a973209",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "channel.md",
+                "file": "工具/git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "channel 的出链列表"
+              "title": "git 的出链列表"
             }
           },
           {
-            "id": "4ba008df947dde04",
+            "id": "516c8138221e6f2d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +137,7 @@
             }
           },
           {
-            "id": "322f1ca4075d4da8",
+            "id": "dc12e76297a7d3bf",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -151,26 +151,26 @@
             }
           },
           {
-            "id": "80d088dc06fcd01a",
+            "id": "c7d1e49ad83d1bfa",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "channel.md",
+                "file": "学习计划.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "channel 的大纲"
+              "title": "学习计划 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,12 +183,39 @@
       "bases:新建数据库": false
     }
   },
-  "active": "863aed325e77a92b",
+  "active": "3f06d4050aa98c4f",
   "lastOpenFiles": [
-    "brpc源码阅读.md",
-    "内存序.md",
-    "流程_网络层.md",
-    "流程.md",
-    "缓存一致性.md"
+    "语言/Java/java.md",
+    "语言/Java/注解.md",
+    "语言/Java/C++与Java对比.md",
+    "组件/mysql.md",
+    "AI Agent开发/ollama.md",
+    "组件/docker.md",
+    "TODO/利用Dify搭建源码理解Agent.md",
+    "学习计划.md",
+    "README.md",
+    "AI Agent开发/基本概念.md",
+    "组件/docker/容器间通信.md",
+    "组件/docker",
+    "组件/git.md",
+    "组件/k8s.md",
+    "Linux/systemd.md",
+    "Linux/创建dock图标.md",
+    "未命名.base",
+    "TODO",
+    "高性能推理工程师.md",
+    "AI Agent开发/RAG检索增强.md",
+    "AI Agent开发",
+    "语言/Java/Maven.md",
+    "职业规划.md",
+    "组件/redis.md",
+    "源码阅读",
+    "Linux",
+    "语言/Java/一体化部署 vs 分离部署.md",
+    "语言/Java/Java.md",
+    "语言/Java",
+    "语言",
+    "组件/java.md",
+    "组件/Nodejs.md"
   ]
 }
