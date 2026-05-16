@@ -185,6 +185,8 @@
   },
   "active": "513c0dd44a4c9b5e",
   "lastOpenFiles": [
+    "docs/claude-code-guide.md",
+    "docs/claude-code-guide.md.tmp.1841996.1778067348768",
     "docs/clickhouse-learning.md",
     "docs/clickhouse-learning.md.tmp.1046791.1777973421302",
     "2026-04-13.md",
@@ -215,11 +217,9 @@
     "组件/ansible/ansible playbook.md",
     "组件/ansible/ansible inventory怎么解读.md",
     "语言/Java/java.md",
-    "语言/Java/注解.md",
     "组件/docker",
     "未命名.base",
     "TODO",
-    "AI Agent开发",
-    "源码阅读"
+    "AI Agent开发"
   ]
 }
