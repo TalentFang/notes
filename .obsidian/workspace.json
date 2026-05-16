@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8a7d8b48fe678e4f",
+        "id": "026807952b653011",
         "type": "tabs",
         "children": [
           {
-            "id": "3f06d4050aa98c4f",
+            "id": "4948f0d13c8cb5c4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "组件/ansible/ansible.md",
+                "file": "2026-05-15.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ansible"
+              "title": "2026-05-15"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "组件/ansible/ansible.md",
+                "file": "2026-05-15.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "ansible 的大纲"
+              "title": "2026-05-15 的大纲"
             }
           }
         ],
@@ -183,31 +183,8 @@
       "bases:新建数据库": false
     }
   },
-  "active": "513c0dd44a4c9b5e",
+  "active": "4948f0d13c8cb5c4",
   "lastOpenFiles": [
-    "docs/claude-code-guide.md",
-    "docs/claude-code-guide.md.tmp.1841996.1778067348768",
-    "docs/clickhouse-learning.md",
-    "docs/clickhouse-learning.md.tmp.1046791.1777973421302",
-    "2026-04-13.md",
-    "组件/ansible",
-    "TODO/利用Dify搭建源码理解Agent.md",
-    "学习计划.md",
-    "docs/k8s-learning.md",
-    "docs/k8s-learning.md.tmp.1046791.1777902222799",
-    "docs",
-    "Java学习/导航树.md",
-    "Java学习/一体化部署 vs 分离部署.md",
-    "Java学习/C++与Java对比.md",
-    "Java学习",
-    "模型会议记录.md",
-    "yaml文件格式.md",
-    "shell脚本.md",
-    "linux 用户权限.md",
-    "keepalived.md",
-    "jinja2表达式.md",
-    "ipaas-precheck开发记录.md",
-    "go核心语法.md",
     "组件/ansible/ansible.md",
     "组件/ansible/ansible 模块用法.md",
     "组件/ansible/ansible 常用命令行.md",
@@ -216,10 +193,33 @@
     "组件/ansible/ansible roles怎么写.md",
     "组件/ansible/ansible playbook.md",
     "组件/ansible/ansible inventory怎么解读.md",
-    "语言/Java/java.md",
+    "组件/ansible",
+    "docs/k8s-learning.md",
+    "docs/clickhouse-learning.md",
+    "docs/claude-code-guide.md",
+    "docs",
+    "2026-05-14.md",
+    "2026-05-15.md",
+    "python-offline/01-maxs_status_check.md",
+    "语言/PostgreSQL/核心概念.md",
+    "语言/PostgreSQL/基本用法.md",
+    "语言/PostgreSQL/与MySQL对比.md",
+    "语言/PostgreSQL/数据类型.md",
+    "python-offline/04-asap-log-purge.md",
+    "语言/PostgreSQL/README.md",
+    "语言/PostgreSQL",
+    "2026-05-13.md",
+    "python-offline/00-使用场景.md",
+    "python-offline/00-总览.md",
+    "语言/Python/python.md",
+    "语言/Python/pip 与虚拟环境.md",
+    "语言/Python/模块与导入.md",
+    "语言/Python",
+    "python-offline",
     "组件/docker",
     "未命名.base",
     "TODO",
-    "AI Agent开发"
+    "AI Agent",
+    "源码阅读"
   ]
 }
