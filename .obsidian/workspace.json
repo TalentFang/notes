@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-05-15.md",
+                "file": "docs/claude-code-guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-15"
+              "title": "claude-code-guide"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2026-05-15.md",
+                "file": "docs/claude-code-guide.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2026-05-15 的大纲"
+              "title": "claude-code-guide 的大纲"
             }
           }
         ],
@@ -185,6 +185,9 @@
   },
   "active": "4948f0d13c8cb5c4",
   "lastOpenFiles": [
+    "docs/bibliometrics-learning.md",
+    "docs/claude-code-guide.md",
+    "2026-05-15.md",
     "组件/ansible/ansible.md",
     "组件/ansible/ansible 模块用法.md",
     "组件/ansible/ansible 常用命令行.md",
@@ -196,10 +199,8 @@
     "组件/ansible",
     "docs/k8s-learning.md",
     "docs/clickhouse-learning.md",
-    "docs/claude-code-guide.md",
     "docs",
     "2026-05-14.md",
-    "2026-05-15.md",
     "python-offline/01-maxs_status_check.md",
     "语言/PostgreSQL/核心概念.md",
     "语言/PostgreSQL/基本用法.md",
@@ -213,7 +214,6 @@
     "python-offline/00-总览.md",
     "语言/Python/python.md",
     "语言/Python/pip 与虚拟环境.md",
-    "语言/Python/模块与导入.md",
     "语言/Python",
     "python-offline",
     "组件/docker",
