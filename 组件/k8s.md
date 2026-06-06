@@ -1,0 +1,1 @@
+![A diagram showing how the parts of a Kubernetes cluster relate to one another|568](https://www.redhat.com/rhdc/managed-files/kubernetes_diagram-v3-770x717_0.svg)
