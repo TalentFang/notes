@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/claude-code-guide.md",
+                "file": "学习计划.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "claude-code-guide"
+              "title": "学习计划"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/claude-code-guide.md",
+                "file": "学习计划.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "claude-code-guide 的大纲"
+              "title": "学习计划 的大纲"
             }
           }
         ],
@@ -185,41 +185,42 @@
   },
   "active": "4948f0d13c8cb5c4",
   "lastOpenFiles": [
-    "语言/shell脚本.md",
-    "语言/jinja2表达式.md",
+    "组件/k8s/一文速通k8s基础概念原理Kubernetes - 技术栈.md",
+    "组件/k8s",
+    "学习计划.md",
+    "Clippings",
+    "docs/bibliometrics-learning.md",
+    "组件/k8s.md",
+    "组件/docker.md",
+    "组件/git.md",
     "语言/go核心语法.md",
-    "组件/nginx_keepalived_analysis.md",
-    "组件/nginx/配置文件解读.md",
-    "组件/nginx",
-    "组件/brpc/缓存一致性.md",
-    "组件/brpc/流程_网络层.md",
-    "组件/brpc/流程.md",
-    "组件/brpc/内存序.md",
-    "组件/brpc/socket.md",
-    "组件/brpc/shared_part.md",
-    "组件/brpc/server.md",
-    "组件/brpc/resource_pool.md",
-    "组件/brpc/protocol.md",
-    "组件/brpc/protobuf.md",
-    "组件/brpc/loadbalancer.md",
-    "组件/brpc/load_balancer.md",
-    "组件/brpc/event_dispatcher.md",
-    "组件/brpc/channel.md",
-    "组件/brpc/callid相关.md",
-    "组件/brpc/brpc源码阅读.md",
-    "组件/brpc/VersionedRefWithId.md",
-    "组件/brpc/Transport.md",
-    "组件/brpc/InputMessenger.md",
-    "组件/brpc/IOBuf.md",
-    "组件/brpc/CRTP.md",
-    "组件/brpc",
+    "语言/jinja2表达式.md",
+    "语言/shell脚本.md",
+    "语言/PostgreSQL/与MySQL对比.md",
+    "ipaas/upgrade_shell_分析.md",
+    "2026-06-03.md",
+    "ipaas/business-deploy-pre流程分析.md",
+    "ipaas/maxs-ops 项目与 Jenkins 打包分析总结.md",
+    "2026-06-02.md",
+    "yaml文件格式.md",
+    "2026-05-25.md",
+    "2026-05-15.md",
+    "2026-05-14.md",
+    "2026-05-13.md",
+    "2026-05-10.md",
+    "2026-04-13.md",
+    "es-exporter-deploy.md",
+    "README.md",
+    "ipaas/jenkins_thirdparty_analysis.md",
+    "img_v3_02121_9dc75af0-879b-4680-a2f7-d56c88c1cacg.jpg",
     "ipaas",
+    "未命名.canvas",
+    "组件/nginx",
     "组件/ansible",
     "docs",
     "语言/PostgreSQL",
     "语言/Python",
     "python-offline",
-    "组件/docker",
-    "未命名.base"
+    "组件/docker"
   ]
 }
