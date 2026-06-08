@@ -183,7 +183,7 @@
       "bases:新建数据库": false
     }
   },
-  "active": "4948f0d13c8cb5c4",
+  "active": "513c0dd44a4c9b5e",
   "lastOpenFiles": [
     "组件/k8s/一文速通k8s基础概念原理Kubernetes - 技术栈.md",
     "组件/k8s",
@@ -220,7 +220,7 @@
     "docs",
     "语言/PostgreSQL",
     "语言/Python",
-    "python-offline",
+    "ipaas/python-offline",
     "组件/docker"
   ]
 }
