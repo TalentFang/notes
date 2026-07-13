@@ -1,14 +1,13 @@
 ---
-title: "一文速通k8s基础概念原理Kubernetes - 技术栈"
-source: "https://jishuzhan.net/article/1982700914650710018"
+title: 一文速通k8s基础概念原理Kubernetes - 技术栈
+source: https://jishuzhan.net/article/1982700914650710018
 author:
 published:
 created: 2026-06-06
-description: "大家好，我是此林。今天我们来从零讲讲 k8s 的核心概念和原理，通俗易懂一遍过。Kubernetes（简称 k8s）是一个容器编排系统，核心任务是："
+description: 大家好，我是此林。今天我们来从零讲讲 k8s 的核心概念和原理，通俗易懂一遍过。Kubernetes（简称 k8s）是一个容器编排系统，核心任务是：
 tags:
-  - "clippings"
 ---
-
+**所有的k8s资源本质上都是etcd中的一条json对象记录 **
 ### 一、Kubernetes 是什么？
 
 Kubernetes（简称 **k8s** ）是一个 **容器编排系统** ，核心任务是：

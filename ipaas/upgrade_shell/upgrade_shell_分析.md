@@ -203,12 +203,12 @@ run_scripts_in_dir_orderly() {
 
 ### 7. 部署方式差异
 
-| 组件类型 | 部署命令 | 说明 |
-|----------|----------|------|
-| 特殊组件（rule-engine, data-process-engine, maxs-ts 等） | `deploy.sh -c <name> -a` | 构建并部署 |
-| 普通 Java 业务 | `deploy.sh -c <name> -d` | 仅部署（推送镜像到 K8S） |
-| 静态服务（maxs-upgrade, bi-selenium 等） | 跳过 | 不需要重新打镜像 |
-| 物理机服务（maxs-datareport 等） | `file_upload_exec_tool.sh` | 文件分发 + systemctl 重启 |
+| 组件类型                                              | 部署命令                       | 说明                  |
+| ------------------------------------------------- | -------------------------- | ------------------- |
+| 特殊组件（rule-engine, data-process-engine, maxs-ts 等） | `deploy.sh -c <name> -a`   | 构建并部署               |
+| 普通 Java 业务                                        | `deploy.sh -c <name> -d`   | 仅部署（推送镜像到 K8S）      |
+| 静态服务（maxs-upgrade, bi-selenium 等）                 | 跳过                         | 不需要重新打镜像            |
+| 物理机服务（maxs-datareport 等）                          | `file_upload_exec_tool.sh` | 文件分发 + systemctl 重启 |
 
 ## 五、数据流总结
 
