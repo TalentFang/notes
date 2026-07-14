@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "每日/2026-07-13.md",
+                "file": "ipaas/6.0.9/01 组件升级.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-13"
+              "title": "01 组件升级"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "每日/2026-07-13.md",
+                "file": "ipaas/6.0.9/01 组件升级.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2026-07-13 的大纲"
+              "title": "01 组件升级 的大纲"
             }
           }
         ],
@@ -185,34 +185,35 @@
   },
   "active": "10679f56e492c034",
   "lastOpenFiles": [
-    "ipaas/6.0.9/01 组件升级方案-详细操作.md",
+    "ipaas/6.0.9/01组件升级/1. prometheus",
+    "ipaas/6.0.9/01组件升级",
+    "raw/01 组件升级方案-详细操作.md",
+    "ipaas/6.0.9/01 组件升级.md",
     "ipaas/6.0.9/00 开发计划.md",
+    "ipaas/6.0.9/集群稳定性-资源不足时能力保障.md",
+    "raw/09密码管理改造方案.md",
+    "ipaas/6.0.9/镜像合并升级，资源管理.md",
+    "ipaas/6.0.9/修改密码.md",
+    "ipaas/maxs-ops/k8s.md",
+    "ipaas/maxs-ops/sysctl配置文件生效机制.md",
+    "ipaas/maxs-ops/etcd.md",
+    "ipaas/maxs-ops/业务deploy,deploy-scale过程分析.md",
+    "raw/maxs-ops-代码使用分析.md",
+    "TODO/利用Dify搭建源码理解Agent.md",
+    "每日/2026-07-14 608组内代码review.md",
+    "raw/Downloads.md",
+    "Clippings/Downloads.md",
     "每日/2026-07-13.md",
+    "每日/2026-07-10 第三方组件升级版本讨论.md",
     "ipaas/jenkins/jenkins备份.md",
     "ipaas/jenkins/build_daily_xdr6.0.4.md",
     "ipaas/ipaas-packing/ipaas-packing打包流程.md",
     "ipaas/ipaas-packing/替换脚本.md",
-    "ipaas/6.0.9/集群稳定性-资源不足时能力保障.md",
     "组件/学习计划.md",
     "组件/clickhouse/clickhouse-learning.md",
     "未命名.md",
-    "多加一套jdk，不影响业务.md",
-    "raw/bibliometrics-learning.md",
-    "智能体/claude-code-guide.md",
-    "智能体/基本概念.md",
-    "每日/2026-07-10 第三方组件升级版本讨论.md",
-    "语言/jinja2表达式.md",
-    "ipaas/6.0.9/镜像合并升级，资源管理.md",
-    "ipaas/6.0.9/第三方组件升级方案.md",
-    "ipaas/提示词.md",
-    "智能体/未命名.md",
-    "product/agent画板/描述.md",
     "product/agent画板",
-    "每日/2026-07-06.md",
     "product",
-    "组件/clickhouse/配置文件.md",
-    "ipaas/maxs-ops/密码管理改造方案.md",
-    "ipaas/upgrade_shell/upgrade_shell_分析.md",
     "ipaas/6.0.9",
     "组件/clickhouse",
     "ipaas/ipaas-packing",
@@ -220,7 +221,6 @@
     "每日",
     "组件/kafka",
     "ipaas/jenkins",
-    "ipaas/maxs-ops",
     "未命名.canvas",
     "img_v3_02121_9dc75af0-879b-4680-a2f7-d56c88c1cacg.jpg"
   ]

@@ -1,28 +1,18 @@
-# business-deploy-pre 脚本分析
 
-> 源码路径: `roles/business-deploy-pre/`
-> 分析日期: 2026-06-04
 
 ## 一、概述
 
 `business-deploy-pre` 角色负责在目标机器上生成以下关键脚本：
 
-| 脚本 | 渲染后路径 | 用途 |
-|------|-----------|------|
-| `deploy.sh.j2` | `/data/asap/deploy.sh` | **首次全量部署** |
-| `deploy_scale.sh.j2` | `/data/asap/deploy_scale.sh` | **扩容/缩容/修改IP** |
-| `deploy_upper.sh.j2` | `/data/asap/deploy_upper.sh` | **行业版本批量部署** |
-| `deploy_check_ini.sh.j2` | `/data/asap/deploy_check_ini.sh` | **健康检查配置初始化** |
-| `db_version_init.sh.j2` | `/data/asap/db_version_init.sh` | **微服务版本信息初始化** |
+| 脚本                       | 渲染后路径                            | 用途             |
+| ------------------------ | -------------------------------- | -------------- |
+| `deploy.sh.j2`           | `/data/asap/deploy.sh`           | **首次全量部署**     |
+| `deploy_scale.sh.j2`     | `/data/asap/deploy_scale.sh`     | **扩容/缩容/修改IP** |
 
-`vars/main.yml` 定义了一个关键变量：
-```yaml
-SERVER_VIP: "{{ groups['vip'][0] if groups['vip']|length > 0 else groups['all'][0] }}"
-```
 
 ---
 
-## 二、扩容操作流程 (scale-component)
+## 二、type = scale-component
 
 ### 调用方式
 
@@ -103,7 +93,7 @@ deploy_scale.sh -t scale-component <组件名> -a
 
 ---
 
-## 三、缩容操作流程
+## 三、type = refresh-config
 
 缩容与扩容共用 `deploy_scale.sh`，任务类型不同：
 
@@ -135,7 +125,7 @@ sh /data/asap/deploy_scale.sh -t refresh-config -a
 
 ---
 
-## 四、修改 IP 操作流程 (modify-ip)
+##  type = modify-ip
 
 ### 调用方式
 
@@ -254,114 +244,4 @@ deploy.sh -p /data/asap/deploy -a
 └── 4. 结束
 ```
 
-### deploy_upper.sh 行业版本批量部署
 
-```bash
-sh /data/asap/deploy_upper.sh
-```
-
-该脚本遍历 `/data/asap/deploy-*`（所有行业版本目录），对每个目录执行：
-1. `sh /data/asap/deploy.sh -p <行业目录> -a` — 全量部署
-2. `sh /data/asap/db_version_init.sh <行业目录>` — 初始化版本信息
-
----
-
-## 六、upgrade_deploy.sh 版本升级流程
-
-### 调用方式
-
-```bash
-sh /data/maxs-ops/tools/upgrade_deploy.sh -p <升级包路径> -c <服务名> -v <版本号> -a
-```
-
-### 参数说明
-
-| 参数 | 含义 |
-|------|------|
-| `-p <路径>` | 升级包路径 |
-| `-c <服务名>` | 目标服务名 |
-| `-v <版本号>` | 升级目标版本 |
-| `-a` | 全部开启 |
-| `-s` | 仅执行 SQL |
-
-### 执行流程
-
-```
-upgrade_deploy.sh -p <路径> -c <服务名> -v <版本号> -a
-│
-├── 验证必填参数（path/version/servicename）
-│
-├── deploy_one_service(服务名, 版本号)
-│   │
-│   ├── [pre_flag=1] deploy_sh(服务名, 版本号, "pre")
-│   │   └── <路径>/<服务名>/<版本号>/sh/pre/
-│   │       ├── pre.sh
-│   │       ├── <groupname>_one/ 或 <groupname>_all/ 脚本
-│   │       └── post.sh
-│   │
-│   ├── [sql_flag=1] deploy_sql(服务名, 版本号)
-│   │   └── <路径>/<服务名>/<版本号>/sql/
-│   │       ├── *.sql
-│   │       └── <产品名>/*.sql
-│   │
-│   └── [post_flag=1] deploy_sh(服务名, 版本号, "post")
-│       └── <路径>/<服务名>/<版本号>/sh/post/
-│
-└── 结束
-```
-
-### 与 deploy.sh 的区别
-
-| 对比项 | deploy.sh | upgrade_deploy.sh |
-|--------|-----------|-------------------|
-| 用途 | 首次全量部署 | 增量版本升级 |
-| Docker 构建 | 有 | 无 |
-| K8s 部署 | 有 | 无 |
-| 服务目录 | `/data/asap/deploy/<服务名>/` | `<路径>/<服务名>/<版本号>/` |
-| 外部调用 | 由 deploy role 调用 | 由部署编排器（如 Jenkins）调用 |
-
----
-
-## 七、健康检查配置初始化 (deploy_check_ini.sh)
-
-在 `deploy_check_ini.sh.j2` 中定义了 4 个函数，用于向 `/data/asap/maxs_status_check/conf.ini` 注入检查项：
-
-| 函数 | 数据源 | 注入位置 |
-|------|--------|---------|
-| `add_k8s_check()` | `k8s_check.txt` | `[k8s]` 节后 |
-| `add_systemd_check()` | `systemd_check.txt` | `asap_node_exporter` 行后 |
-| `add_k8s_service_check()` | `k8s_service.txt` | `k8s_service` 行后 |
-| `add_k8s_ingress_check()` | `k8s_ingress.txt` | `k8s_ingress` 行后 |
-
-这些文件在 `deploy.sh` 的 Docker 部署阶段被动态写入：
-- `deploy.sh` → `write_service()` → 写入 `k8s_service.txt`
-- `deploy.sh` → `write_ingress()` → 写入 `k8s_ingress.txt`
-- `deploy.sh` → 追加到 `k8s_check.txt`
-
----
-
-## 八、Ansible Playbook 调用关系
-
-```
-playbooks/business/00.business-pre.yml
-  └── roles/business-deploy-pre  ← 生成所有脚本
-
-playbooks/business/01.business.yml
-  └── roles/business-deploy      ← 执行 deploy.sh + db_version_init.sh + deploy_upper.sh + deploy_check_ini.sh
-
-playbooks/business/08.business-sh-scale-deploy.yml
-  └── roles/business-sh-scale-deploy  ← 扩缩容脚本执行
-```
-
----
-
-## 九、各操作对比总结
-
-| 操作 | 入口脚本 | 任务类型 | 脚本目录 | 是否构建镜像 |
-|------|---------|---------|---------|-------------|
-| 首次部署 | `deploy.sh` | - | `sh/pre/`, `sh/post/` | 是 |
-| 扩容 | `deploy_scale.sh -t scale-component` | `scale-component` | `sh/scale/scale-component/<组件>/` | 否 |
-| 缩容 | `deploy_scale.sh -t refresh-config` | `refresh-config` | `sh/scale/refresh-config/` | 否 |
-| 修改 IP | `deploy_scale.sh -t modify-ip -i <IP>` | `modify-ip` | `sh/scale/modify-ip/` | 否 |
-| 版本升级 | `upgrade_deploy.sh` | - | `<版本号>/sh/`, `<版本号>/sql/` | 否 |
-| 行业部署 | `deploy_upper.sh` | - | 调用 deploy.sh | 是 |
