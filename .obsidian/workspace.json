@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ipaas/6.0.9/01 组件升级.md",
+                "file": "product/agent画板/描述.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 组件升级"
+              "title": "描述"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -156,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ipaas/6.0.9/01 组件升级.md",
+                "file": "product/agent画板/描述.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "01 组件升级 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -185,10 +187,13 @@
   },
   "active": "10679f56e492c034",
   "lastOpenFiles": [
+    "product/列表.md",
+    "product/在线工具箱.md",
+    "product/CastReader：把网页、Kindle、微信读书、PDF 读给你听,还能边读边讲解,支持 40+ 语言(Chrome 插件).md",
+    "ipaas/6.0.9/01 组件升级.md",
     "ipaas/6.0.9/01组件升级/1. prometheus",
     "ipaas/6.0.9/01组件升级",
     "raw/01 组件升级方案-详细操作.md",
-    "ipaas/6.0.9/01 组件升级.md",
     "ipaas/6.0.9/00 开发计划.md",
     "ipaas/6.0.9/集群稳定性-资源不足时能力保障.md",
     "raw/09密码管理改造方案.md",
@@ -210,8 +215,6 @@
     "ipaas/ipaas-packing/ipaas-packing打包流程.md",
     "ipaas/ipaas-packing/替换脚本.md",
     "组件/学习计划.md",
-    "组件/clickhouse/clickhouse-learning.md",
-    "未命名.md",
     "product/agent画板",
     "product",
     "ipaas/6.0.9",
@@ -220,7 +223,6 @@
     "ipaas/upgrade_shell",
     "每日",
     "组件/kafka",
-    "ipaas/jenkins",
     "未命名.canvas",
     "img_v3_02121_9dc75af0-879b-4680-a2f7-d56c88c1cacg.jpg"
   ]
