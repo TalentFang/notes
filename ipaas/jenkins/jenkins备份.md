@@ -165,3 +165,8 @@ docker run --name=myjenkins \
         -t \
         jenkins/jenkins:2.346.3
 ```
+
+
+
+
+maxs-rule-server/target/maxs-rule-server-6*.tar.gz

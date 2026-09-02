@@ -425,3 +425,5 @@ CGO_ENABLED=0 GOOS=linux GOARCH=arm64 go build -o ipaas-packing main.go
 3. **SSH 信任**：首次运行需要确认 SSH 指纹，或使用 `StrictHostKeyChecking=no`
 4. **组件依赖**：CSV 中组件的依赖关系在 `config.yaml` 的 `third[].related` 字段定义
 5. **版本匹配**：CSV 中组件版本必须在 `config.yaml` 的 `third` 列表中存在
+
+
