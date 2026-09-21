@@ -26,7 +26,7 @@ make CMAKE_ARGS="-DCMAKE_C_COMPILER=/usr/local/gcc-11.4.0/bin/gcc -DCMAKE_CXX_CO
 make MALLOC=libc CC=gcc CXX=g++ LDFLAGS="-lssl -lcrypto -lz" CFLAGS="-Wno-error" CXXFLAGS="-Wno-error" BUILD_TLS=yes BUILD_WITH_MODULES=yes IGNORE_MISSING_DEPS=1 -j$(nproc) all
 
 # 安装
-make PREFIX=/data/comm/redis install
+make PREFIX=/data/comm/redis-8.6.6 install
 ```
 
 
@@ -84,7 +84,7 @@ yum install -y cmake
 # clang 
 yum install -y clang clang-devel
 ```
-
+PARAM_KAFKA_AUTH_EXTERNAL=SCRAM-SHA-512
 
 
 **rustc ：** 
