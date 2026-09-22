@@ -1,5 +1,7 @@
 [
   "obsidian-local-rest-api",
   "table-editor-obsidian",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-excalidraw-plugin",
+  "excalidraw-extras"
 ]
