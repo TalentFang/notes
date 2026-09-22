@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a3d483e1216abff3",
+            "id": "ae7a892f85b7f8c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ipaas/6.0.9/01 组件升级.md",
+                "file": "每日/2026-07-27.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 组件升级"
+              "title": "2026-07-27"
             }
           }
         ]
@@ -158,17 +158,37 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ipaas/6.0.9/01 组件升级.md",
-                "followCursor": false,
+                "file": "每日/2026-07-27.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
               "title": "大纲"
             }
+          },
+          {
+            "id": "37613f8d9ea52c2d",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "d8dfb2e811416f31",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -182,16 +202,24 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "workspaces:管理工作区布局": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a3d483e1216abff3",
+  "active": "ae7a892f85b7f8c9",
   "lastOpenFiles": [
-    "ipaas/6.0.9/04 redis 8.6.6编译.md",
+    "ipaas/6.0.9/03 组件升级变量.md",
+    "ipaas/6.0.9/02 软件版.md",
     "ipaas/6.0.9/01 组件升级.md",
+    "每日/2026-08-03.md",
+    "每日/2026-07-27.md",
+    "ipaas/6.0.9/04 redis 8.6.6编译.md",
+    "ipaas/6.0.9/公司vpn.md",
     "组件/clickhouse/02 ck原理 25 问.md",
     "组件/clickhouse/01 图解.md",
-    "ipaas/6.0.9/公司vpn.md",
     "ipaas/maxs-ops/日志采集流程分析.md",
     "product/列表.md",
     "outputs/ld-uncertainty-finemapping.provenance.md",
@@ -201,7 +229,6 @@
     "ipaas/ipaas-packing/多版本打包.md",
     "ipaas/ipaas-packing/替换脚本.md",
     "每日/2026-09-10.md",
-    "每日/2026-08-03.md",
     "raw/clickhouse-zookeeper迁移keeper方案.md",
     "组件/npm/包机制.md",
     "组件/npm",
@@ -211,12 +238,9 @@
     "44d05645-3e2e-4c20-89f5-7184bda59aef.png",
     "img_v3_0214l_f113285f-eb08-44a9-9b90-16e6dc27412g.jpg",
     "Linux/cgroup.md",
-    "ipaas/6.0.9/03 组件升级变量.md",
     "ipaas/ipaas-packing/ipaas-packing打包流程.md",
-    "每日/2026-07-27.md",
     "ipaas/6.0.9/集群稳定性-资源不足时能力保障.md",
     "ipaas/6.0.9/性能报告-192.168.112.106.md",
-    "ipaas/6.0.9/02 软件版.md",
     "ipaas/6.0.9/03 安装包体积优化.md",
     "组件/containerd",
     "语言/TypeScript",

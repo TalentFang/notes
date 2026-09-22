@@ -25,6 +25,13 @@ make CMAKE_ARGS="-DCMAKE_C_COMPILER=/usr/local/gcc-11.4.0/bin/gcc -DCMAKE_CXX_CO
 # euler
 make MALLOC=libc CC=gcc CXX=g++ LDFLAGS="-lssl -lcrypto -lz" CFLAGS="-Wno-error" CXXFLAGS="-Wno-error" BUILD_TLS=yes BUILD_WITH_MODULES=yes IGNORE_MISSING_DEPS=1 -j$(nproc) all
 
+# euler 2203
+dnf install -y gcc-toolset-12-gcc gcc-toolset-12-gcc-c++
+export PATH=/opt/openEuler/gcc-toolset-12/root/usr/bin:$PATH
+gcc --version    # 确认显示 12.3.1
+
+make MALLOC=libc CC=gcc CXX=g++   LDFLAGS="-lssl -lcrypto -lz -static-libstdc++ -static-libgcc"   CFLAGS="-Wno-error" CXXFLAGS="-Wno-error"   BUILD_TLS=yes BUILD_WITH_MODULES=yes   IGNORE_MISSING_DEPS=1 -j$(nproc) all
+
 # 安装
 make PREFIX=/data/comm/redis-8.6.6 install
 ```
@@ -70,6 +77,7 @@ export LD_LIBRARY_PATH 路径
 
 **openssl-devel,zlib-devel** 
 ```
+echo "nameserver 8.8.8.8" >> /etc/resolv.conf
 # openssl-deve,zlib-devell** 
 yum install -y openssl-devel zlib-devel
 
